@@ -1,0 +1,11 @@
+.DS_Store
+git_push.command
+login.sh
+ahc008/*
+!ahc008/*.gif
+!ahc008/*.py
+!ahc008/*.sh
+asprocon8/*
+!asprocon8/*.gif
+!asprocon8/*.py
+!asprocon8/*.sh

@@ -1,0 +1,76 @@
+{
+	"mod10**9+7": {
+		"prefix": "p1mod",
+		"body": [
+			"MOD1 = 10**9 + 7"
+		],
+	},
+	"mod998244353": {
+		"prefix": "p9mod",
+		"body": [
+			"MOD9 = 998244353"
+		],
+	},
+	"intinput": {
+		"prefix": "pint",
+		"body": [
+			"int(input())"
+		],
+	},
+	"inputtuple": {
+		"prefix": "ptuple",
+		"body": [
+			"map(int, input().split())"
+		],
+	},
+	"inputlist": {
+		"prefix": "plist",
+		"body": [
+			"list(map(int, input().split()))"
+		],
+	},
+	"inputvector": {
+		"prefix": "pvec",
+		"body": [
+			"[input() for _ in range(${1:N})]"
+		],
+	},
+	"inputmatrix": {
+		"prefix": "pmat",
+		"body": [
+			"[list(map(int, input().split())) for _ in range(${1:N})]"
+		],
+	},
+	"printYesNo": {
+		"prefix": "pprint",
+		"body": [
+			"print('Yes' if res else 'No')"
+		],
+	},
+	"ceil": {
+		"prefix": "pceil",
+		"body": [
+			"def ceil(x, y):",
+			"\treturn (x + y - 1) // y"
+		],
+	},
+	"lcm": {
+		"prefix": "plcm",
+		"body": [
+			"from math import gcd\n\n",
+			"def lcm(x, y):",
+			"\treturn (x * y) // gcd(x, y)"
+		],
+	},
+	"nearlist": {
+		"prefix": "pnearlist",
+		"body": [
+			"def nearlist(N, LIST):",
+			"\tNEAR = [set() for _ in range(N)]",
+			"\tfor a, b in LIST:",
+			"\t\tNEAR[a - 1].add(b - 1)",
+			"\t\tNEAR[b - 1].add(a - 1)",
+			"\treturn NEAR"
+		],
+	},
+}
